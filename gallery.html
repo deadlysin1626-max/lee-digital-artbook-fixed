@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" href="favicon-96x96.png?v=1.1" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.1" />
+<link rel="shortcut icon" href="favicon.ico?v=1.1" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=1.1" />
+<meta name="apple-mobile-web-app-title" content="LEE/ DIGITAL ARTBOOK" />
+<link rel="manifest" href="site.webmanifest?v=1.1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Gallery | Digital Artbook by Lee</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/gallery.css">
+</head>
+
+<body class="gallery-page">
+
+  <!-- =========================
+       NAVIGATION
+       ========================= -->
+
+  <header class="navbar">
+
+
+<a class="logo" href="index.html" aria-label="Return to homepage">
+  <img src="lee-logo.gif" alt="LEE/" class="animated-logo">
+</a>
+
+
+    <nav aria-label="Main navigation">
+      <a href="projects.html">PROJECTS</a>
+      <a href="tour.html">TOUR</a>
+      <a href="gallery.html" aria-current="page">GALLERY</a>
+      <a href="socials.html">SOCIALS</a>
+    </nav>
+
+  </header>
+
+
+  <!-- =========================
+       MAIN GALLERY
+       ========================= -->
+
+  <main class="gallery-main">
+
+    <!-- LARGE GALLERY HEADING -->
+
+    <div class="gallery-heading">
+      <span>THE</span>
+      <h1>GALLERY</h1>
+    </div>
+
+
+    <!-- ARTWORK VIEWER -->
+
+    <section class="gallery-viewer" aria-label="Artwork gallery">
+
+      <!-- PREVIOUS ARTWORK -->
+
+      <button
+        class="gallery-side gallery-previous"
+        id="previous-art"
+        type="button"
+        aria-label="Previous artwork"
+      >
+
+        <img
+          id="previous-image"
+          src="images/optimized/thumbs/dragon-anime-girl.webp"
+          alt="Previous artwork preview"
+        >
+
+        <span class="gallery-arrow" aria-hidden="true">
+          &#8592;
+        </span>
+
+      </button>
+
+
+      <!-- FEATURED ARTWORK -->
+
+      <div class="gallery-feature">
+
+        <img
+          id="featured-image"
+          src="images/optimized/full/myself-in-you.webp"
+          alt="Featured digital illustration"
+          role="button"
+          tabindex="0"
+          aria-label="Expand featured artwork"
+          title="Click to enlarge artwork"
+        >
+
+      </div>
+
+
+      <!-- NEXT ARTWORK -->
+
+      <button
+        class="gallery-side gallery-next"
+        id="next-art"
+        type="button"
+        aria-label="Next artwork"
+      >
+
+        <img
+          id="next-image"
+          src="images/optimized/thumbs/cowboy-fullbody.webp"
+          alt="Next artwork preview"
+        >
+
+        <span class="gallery-arrow" aria-hidden="true">
+          &#8594;
+        </span>
+
+      </button>
+
+    </section>
+
+
+    <!-- =========================
+         ARTWORK INFORMATION
+         ========================= -->
+
+    <section class="gallery-information">
+
+      <p class="gallery-counter" id="art-counter">
+        01 / 04
+      </p>
+
+      <h2 id="art-title">
+        Character Study
+      </h2>
+
+      <p id="art-description">
+        An exploration of character, lighting, and atmosphere
+        through digital painting.
+      </p>
+
+    </section>
+
+    <section class="gallery-library" aria-label="Browse all artworks">
+      <h2 class="gallery-library-title">THE COLLECTION <span id="collection-total">25 WORKS</span></h2>
+      <div class="gallery-thumbnails" id="gallery-thumbnails"></div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+
+  <footer>
+
+    <span>
+      © 2026 LIANNA BYLES
+    </span>
+
+    <span>
+      DIGITAL ARTBOOK
+      <span class="divider">/</span>
+      BY LEE
+    </span>
+
+  </footer>
+
+
+  <!-- =========================
+       FULLSCREEN ARTWORK VIEWER
+       ========================= -->
+
+  <div
+    class="art-lightbox"
+    id="art-lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Expanded artwork"
+    hidden
+  >
+
+    <!-- CLOSE BUTTON -->
+
+    <button
+      class="lightbox-close"
+      id="lightbox-close"
+      type="button"
+      aria-label="Close expanded artwork"
+    >
+      &times;
+    </button>
+
+
+    <!-- ENLARGED IMAGE -->
+
+    <img
+      id="lightbox-image"
+      src=""
+      alt="Expanded artwork"
+    >
+
+  </div>
+
+
+  <!-- =========================
+       JAVASCRIPT
+       ========================= -->
+
+  <script src="assets/gallery-1.js"></script>
+
+
+<script src="assets/gallery-2.js"></script>
+
+</body>
+</html>
